@@ -1,0 +1,14 @@
+.controlPanel {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.controlPanel input {
+	display: block;
+}
+
+canvas {
+	border: 1px solid black;
+	display: inline-block;
+	position:relative;
+}

@@ -3,10 +3,17 @@
 <head>
 <meta charset="utf-8">
 <title>Clipart generator</title>
+<link rel="stylesheet" href="css/index.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.9/fabric.min.js"></script>
 <script src="js/main.js"></script>
 </head>
 <body onload="main();">
+<div class="controlPanel">
+<p><label>Row 1<input type="range" id="row1" value="5" min="1" max="30"></label></p>
+<p><label>Row 2<input type="range" id="row2" value="14" min="1" max="30"></label></p>
+<p><label>Row 3<input type="range" id="row3" value="10" min="1" max="30"></label></p>
+</label>
+</div>
 <canvas id="c" width="1000" height="1000"></canvas>
 </body>
 </html>
