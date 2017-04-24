@@ -12,6 +12,7 @@ var widthOfWidestRow = rowWidth(numCirclesInWidestRow);
 
 function main() {
   var canvas = this.__canvas = new fabric.StaticCanvas('c');
+  canvas.renderOnAddRemove = false;
 
   var circleY = calculateFirstCircleY();
   var previousRowCircleXes = [];
@@ -48,7 +49,7 @@ function main() {
 	  circleY += distanceBetweenRows + circleRadius2;
   });
   //canvas.add(new fabric.Rect({ left: 0, top: 0, width: globalLeft, height: globalTop }));
-  //canvas.renderAll();
+  canvas.renderAll();
 }
 
 function rowWidth(numCircles) {
